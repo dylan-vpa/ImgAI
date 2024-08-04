@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking with the Gemini API</title>
+  <link rel="shortcut icon" href=".idx/icon.png" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <h1>Analiza imagenes con la Gemini API</h1>
+    <form>
+      <div class="image-picker">
+        <input type="file" id="imageUpload" accept="image/*" hidden>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display:none;">
+        <label for="imageUpload" class="image-upload-button">
+          <span>Escoge una Imagen</span><span class="material-symbols-outlined">Add_Photo_Alternate</span>
+        </label>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Enter instructions here" type="text"
+            value="">
+        </label>
+        <button type="submit">Enviar <span class="material-symbols-outlined">send</span></button>
+      </div>
+    </form>
+    <p class="output">La respuesta aparecerá aquí</p>
+  </main>
+  <footer>
+    <span>Created by Leonardo Meza with Gemini API </span>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
